@@ -8,7 +8,19 @@ Quickly browse the iOS sandbox data in the App and perform operations.
 
 # Usage
 
-## import file
+## CocoaPods
+
+```
+platform :ios, '11.0'
+
+target 'SampleTarget' do
+    pod 'SandboxOut'
+end
+```
+
+## Manual
+
+### import file
 
 ```
 #import "SandboxOut.h"
@@ -30,8 +42,3 @@ SOViewController *viewController = [[SOViewController alloc] init];
 viewController.sandboxOut = sandboxOut;
 [self.navigationController pushViewController:viewController animated:YES];
 ```
-
-# Demo
-
-![截图1](./Docs/ScreenShot-1.png)
-![截图2](./Docs/ScreenShot-2.png)
