@@ -58,7 +58,7 @@
     if (rootPath.length <= 0 || [rootPath isEqualToString:_rootPath]) {
         targetPath = _rootPath;
     } else {
-        SOFileItem *fileItem = [[SOFileItem alloc] initWithName:@".." path:rootPath type:SOFileItemUp];
+        SOFileItem *fileItem = [[SOFileItem alloc] initWithName:@"••" path:rootPath type:SOFileItemUp];
         [files addObject:fileItem];
     }
     

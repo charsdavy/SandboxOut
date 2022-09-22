@@ -114,6 +114,10 @@
     [alertController addAction:[UIAlertAction actionWithTitle:@"Send" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [weakself shareFileWithPath:fileItem.path];
     }]];
+    if ([(NSString *)[UIDevice currentDevice].model hasPrefix:@"iPad"]) {
+        alertController.popoverPresentationController.sourceView = self.view;
+        alertController.popoverPresentationController.sourceRect = CGRectMake([UIScreen mainScreen].bounds.size.width * 0.5, [UIScreen mainScreen].bounds.size.height, 10, 10);
+    }
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
