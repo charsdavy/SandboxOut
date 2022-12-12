@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SandboxOut"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Quickly browse the iOS sandbox data in the App and perform operations."
   s.homepage     = "https://github.com/charsdavy/SandboxOut"
   s.license      = 'MIT'
